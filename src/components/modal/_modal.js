@@ -1,9 +1,18 @@
 const modal = () => {
     const inputFile = document.querySelector("input[type='file']"),
         textBlock = document.querySelector(".modal__file-left"),
+        btnBlock = document.querySelector(".modal__file-right"),
         inputCheckbox = document.querySelector("input[type='checkbox']"),
         checkboxLabel = document.querySelector(".modal__label_checkbox"),
         okButton = document.querySelector("button[type='submit']");
+
+    textBlock.addEventListener("click", () => {
+        inputFile.click();
+    });
+
+    btnBlock.addEventListener("click", () => {
+        inputFile.click();
+    });
 
     inputFile.addEventListener("change", () => {
         textBlock.textContent = "File upload";
