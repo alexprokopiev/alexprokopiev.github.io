@@ -226,6 +226,8 @@
                 transform: translateY(-50%); }
     .modal__label_checkbox-checked::before {
       content: url(img/checkbox-active.svg); }
+  .modal__file-wrap {
+    position: relative; }
   .modal__file-left {
     position: absolute;
     top: 2.5rem;
