@@ -1,0 +1,47 @@
+.menu
+    position: fixed
+    top: 0
+    left: -30rem
+    width: 30rem
+    height: 100vh
+    z-index: 1
+    background-color: #0b5fa5
+    transition: all .5s
+    &__close-wrap
+        height: 10rem
+        display: flex
+        align-items: center
+        padding-left: 2rem
+    &__close-icon
+        width: 4rem
+        height: 4rem
+        background: url(../../img/cross.svg) center center/cover no-repeat
+        cursor: pointer
+        transition: all .5s
+        &:hover
+            transform: rotate(180deg)
+    &__link
+        height: 5rem
+        background-color: #3f8fd2
+        &:hover
+            background-color: #66a1d2
+            border: .2rem solid #3f8fd2
+            box-shadow: 0 0 .5rem .5rem rgba(63, 143, 210, 0.5) inset
+            a
+                color: #ffffff
+        a
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            text-transform: uppercase
+            color: #000000
+            font-weight: 700
+        &_active
+            background-color: #66a1d2
+            border: .2rem solid #3f8fd2
+            box-shadow: 0 0 .5rem .5rem rgba(63, 143, 210, 0.5) inset
+            a
+                color: #ffffff

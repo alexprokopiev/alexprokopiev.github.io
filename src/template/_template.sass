@@ -1,0 +1,92 @@
+@import '../fonts/_fonts'
+@import '../components/header/_header'
+@import '../components/base/_base'
+@import '../components/footer/_footer'
+@import '../components/footer/_footer'
+@import '../components/modal/_modal'
+
+html
+    font-size: 10px
+    background-color: #66a1d2
+*
+    font-family: Roboto, sans-serif
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+body
+    font-size: 1.6rem
+.container
+    max-width: 184rem
+    margin: 0 auto
+    padding: 0 1rem
+.button
+    position: relative
+    background-color: inherit
+    width: 25rem
+    height: 5rem
+    overflow: hidden
+    border-radius: 1rem
+    border: .2rem solid #0b5fa5
+    outline: none
+    color: #0b5fa5
+    font-size: 1.6rem
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+    transition: all .5s
+    &:hover
+        background-color: #0b5fa5
+        color: #66a1d2
+    &_modal
+        background-color: #66a1d2
+        width: 12rem
+        height: 3.5rem
+        border: .1rem solid #ffffff
+        color: #ffffff
+        &:hover
+            color: #ffffff
+    &::before
+        position: absolute
+        content: ''
+        left: 0
+        top: 0
+        width: 100%
+        height: 5rem
+        background: linear-gradient(90deg, rgba(11,95,165,0) 6.82%,rgba(11,95,165,.4) 50.85%,rgba(11,95,165,0) 97.73%)
+        animation: shine linear 3s infinite
+    &_disabled
+        background-color: rgba(0,0,0,.5)
+        border: none
+        cursor: auto
+        &::before
+            animation: none
+        &:hover
+            background-color: rgba(0,0,0,.5)
+    @keyframes shine
+        0%
+            left: -100%
+        50%
+            left: 100%
+        100%
+            left: 100%
+.input
+    position: relative
+    display: block
+    margin: 1rem auto
+    width: 26rem
+    height: 3.5rem
+    border-radius: 1.75rem
+    border: none
+    outline: none
+    padding: 0 1rem
+    font-size: 1.6rem
+    &_checkbox
+        display: none
+.textarea
+    display: block
+    width: 26rem
+    min-height: 8rem
+    border-radius: 1.75rem
+    margin: 1rem auto
+    outline: none
+    padding: 1rem

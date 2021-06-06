@@ -1,0 +1,17 @@
+.overlay
+    .modal
+        .modal__title Create new item
+        form.form.modal__form
+            label.modal__label Name:
+                input(type="text" name="name").input.input_text
+            label.modal__label Image:
+                input(type="file" name="file").input.input_file
+                .modal__file-left Select file
+                .modal__file-right Choose
+            label.modal__label Description:
+                textarea(name="text").textarea
+            label.modal__label.modal__label_checkbox show
+                input(type="checkbox" name="show").input.input_checkbox
+            .modal__buttons-wrap
+                button(type="submit" disabled).button.button_modal.button_disabled ok
+                button.button.button_modal.button_close cancel
